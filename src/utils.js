@@ -1,4 +1,9 @@
 // 1. Write a function called: convertMiToKm. This takes in a number of miles and returns the equivalent number of kilometers. 1 mile is equal to 1.60934 kilometers. To manually test this, try: console.log(convertMiToKm(1)); which should return 1.60934.
+function convertMiToKm(miles) {
+    return miles * 1.60934;
+}
+
+console.log(convertMiToKm(1));
 
 // 2. Write a function called: calculateAreaOfCircle. This takes in a radius and returns the area of a circle. The formula for the area of a circle is π * r^2. You can use Math.PI for the value of π. To manually test this, try: console.log(calculateAreaOfCircle(1)); which should return 3.141592653589793.
 
