@@ -7,6 +7,12 @@ console.log(convertMiToKm(1));
 
 // 2. Write a function called: calculateAreaOfCircle. This takes in a radius and returns the area of a circle. The formula for the area of a circle is π * r^2. You can use Math.PI for the value of π. To manually test this, try: console.log(calculateAreaOfCircle(1)); which should return 3.141592653589793.
 
+function calculateAreaOfCircle(radius) {
+    return Math.PI * Math.pow(radius, 2);
+}
+
+console.log(calculateAreaOfCircle(1));
+
 // 3. Write a function called: getLetterGrade. This takes in a number grade and returns the letter grade. The grading scale is as follows:
     // 90-100: A
     // 80-89: B
