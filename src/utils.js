@@ -20,6 +20,22 @@ console.log(calculateAreaOfCircle(1));
     // 60-69: D
     // 0-59: F To manually test this, try: console.log(getLetterGrade(90)); which should return A.
 
+function getLetterGrade(grade) {
+    if (grade >= 90) {
+        return 'A';
+    } else if (grade >= 80) {
+        return 'B';
+    } else if (grade >= 70) {
+        return 'C';
+    } else if (grade >= 60) {
+        return 'D';
+    } else {
+        return 'F';
+    }
+}
+
+console.log(getLetterGrade(90));
+
 // 4. Write a function called: getAverage. This takes in an array of numbers and returns the average of those numbers. To manually test this, try: console.log(getAverage([1, 2, 3, 4, 5])); which should return 3.
 
 // 5. Write a function called isLeapYear. This takes in a year and returns true if it's a leap year and false if it's not. A leap year is divisible by 4, but not by 100 unless it is divisible by 400. To manually test this, try: console.log(isLeapYear(2020)); which should return true.
