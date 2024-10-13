@@ -38,4 +38,15 @@ console.log(getLetterGrade(90));
 
 // 4. Write a function called: getAverage. This takes in an array of numbers and returns the average of those numbers. To manually test this, try: console.log(getAverage([1, 2, 3, 4, 5])); which should return 3.
 
+function getAverage(numbers){
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum / numbers.length;
+}
+
+console.log(getAverage([1, 2, 3, 4, 5]));
+
 // 5. Write a function called isLeapYear. This takes in a year and returns true if it's a leap year and false if it's not. A leap year is divisible by 4, but not by 100 unless it is divisible by 400. To manually test this, try: console.log(isLeapYear(2020)); which should return true.
+
