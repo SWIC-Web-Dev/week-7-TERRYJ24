@@ -50,3 +50,12 @@ console.log(getAverage([1, 2, 3, 4, 5]));
 
 // 5. Write a function called isLeapYear. This takes in a year and returns true if it's a leap year and false if it's not. A leap year is divisible by 4, but not by 100 unless it is divisible by 400. To manually test this, try: console.log(isLeapYear(2020)); which should return true.
 
+function isLeapYear(year) {
+    if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isLeapYear(2020));
